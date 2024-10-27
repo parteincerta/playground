@@ -1,0 +1,9 @@
+# Ignoring extension-less files.
+# https://stackoverflow.com/a/19023985
+*
+!/**/
+!*.*
+
+*.dSYM
+*.o
+*.ppm
