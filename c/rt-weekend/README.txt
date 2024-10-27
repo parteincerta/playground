@@ -10,7 +10,7 @@ Instructions:
 - To check additional build options:
 	./build.sh --help
 - To run a specific exercise:
-	./bin/01 >./render.ppm
+	./bin/01 >./01.ppm
 
 Notes:
 - The `build.sh` could very well just have been a Makefile, but I took the

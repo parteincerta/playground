@@ -1,2 +1,8 @@
+# Specific files
 .DS_Store
+
+# Specific folders
 bin/
+
+# Generic file types
+*.ppm

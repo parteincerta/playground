@@ -69,8 +69,8 @@ if [ -z "$CC" ]; then
 	[ "$os" = "Linux" ] && CC="gcc"
 fi
 
-[ ${#CFLAGS[@]} -eq 0 ] && [ "$MODE" = "debug" ] && CFLAGS=(-std=c99 -g -O0 -Wall -Werror)
-[ ${#CFLAGS[@]} -eq 0 ] && [ "$MODE" = "release" ] && CFLAGS=(-std=c99 -O3 -Wall -Werror)
+[ ${#CFLAGS[@]} -eq 0 ] && [ "$MODE" = "debug" ] && CFLAGS=(-std=c99 -g -O0 -Wall -Wextra -Werror)
+[ ${#CFLAGS[@]} -eq 0 ] && [ "$MODE" = "release" ] && CFLAGS=(-std=c99 -O3 -Wall -Wextra -Werror)
 [ ${#LFLAGS[@]} -eq 0 ] && [ "$MODE" = "debug" ] && LFLAGS=()
 [ ${#LFLAGS[@]} -eq 0 ] && [ "$MODE" = "release" ] && LFLAGS=()
 
