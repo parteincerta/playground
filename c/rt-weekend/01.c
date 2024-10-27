@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Implements the functionaly demonstrated in:
+// Implements the functionality presented in:
 // https://raytracing.github.io/books/RayTracingInOneWeekend.html#outputanimage/theppmimageformat
 
-int main (int argc, char **argv) {
+int main (int argc, const char **argv) {
 	const int img_width = argc == 3 ? atoi(argv[1]) : 256;
 	const int img_height = argc == 3 ? atoi(argv[2]) : 256;
 
@@ -17,8 +17,8 @@ int main (int argc, char **argv) {
 		const float r = (float)i / (img_width - 1);
 		const float g = (float)j / (img_height - 1);
 
-		const int int_r = (int)255.999f * r;
-		const int int_g = (int)255.999f * g;
+		const int int_r = (int) 255.f * r;
+		const int int_g = (int) 255.f * g;
 
 		fprintf(stdout, "%d %d %d\n", int_r, int_g, 0);
 	}}
